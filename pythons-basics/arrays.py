@@ -67,6 +67,15 @@ print(marks1, " value popped: ", val2)
 6) print the name of datatype of 4th element    
     
 """
+marks = [1,2,3,4,5,6,7,8,9,10]
+print("Array: ", marks, "  size: ", len(marks))
 
+marks.append(44)
+print("Array: ", marks, "  size: ", len(marks))
 
+val = marks.pop(8)
+print("Value popped: ", val)
 
+marks[8] = int(input("Enter value at index 8: "))
+
+print('The datatype of fourth element is: ', type(marks[4]).__name__)

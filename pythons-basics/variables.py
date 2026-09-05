@@ -6,7 +6,7 @@
 4) CHAR -> char -> single character eg, 'a', ' ', '3'
 5) BOOLEAN -> bool -> True or False
 """
-
+# Variable naming -> _, a, A
 # Variables and datatypes
 # DECLARE age : INTEGER
 age = 0 # integer variable
@@ -35,7 +35,7 @@ Q) declare variables and store your height, age, name,
 """
 
 # answer
-"""
+""" multiline comment 
 height = 0.00
 age = 0
 name = ""
@@ -56,11 +56,10 @@ mathslike = False
 // -> div (answer of division in whole number)
 """
 
-# x = 5
-# y = 2
-# z = True
-# p = (x ** y) % 4
-# print("the value of p: ", p)
+x = 5 # storing 5 in x
+y = 2 
+z = True
+p = (x ** y) % 4
 
 
 
@@ -118,26 +117,38 @@ Q) take input name, age, gender, and marks.
 # print(marks)
 
 
-age = 10
-if type(age).__name__ == 'int':
-    print('INTEGER Datatype')
-else:
-    print("Undefined")
+# age = 10
+# if type(age).__name__ == 'int':
+#     print('INTEGER Datatype')
+# else:
+#     print("Undefined")
 
 # type(<variable>) -> returns object of datatype
 # type(<variable>).__name__ -> returns name of the datatype
 
 
+# typecasting
+# num1 = '55'
+# num2 = int(num1)
+# print(num1 + num1)
+# print(num2 + num2)
 
 
+# x = 88
+# y = str(x) # '88'
+
+# age = int(input("enter age: "))
+# print(age * 4) 
 
 
+# Q: take l w h from user, output
+#  volume with a suitable message
 
-
-
-
-
-
+l = int(input("Enter length: "))
+w = int(input("Enter width: "))
+h = int(input("Enter height: "))
+vol = l * w * h
+print("Volume is: ", vol)
 
 
 
