@@ -58,3 +58,6 @@ print("The value of answer is ", ans)
 Q) make a function to take 3 integers that returns
  the largest of them all
 """
+
+# array will be always passed by reference
+# normal variables are always passed by value, python has no by reference

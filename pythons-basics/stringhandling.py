@@ -40,6 +40,65 @@
 #         count+=1
 # print("counts of vowels is",count)        
            
-# Q) 
+# converting a list into a string
+# arr = ['h', 'e', 'l', 'l', 'o', '!']
+# s = "".join(arr)
+# print(s)
 
-                
+# option 2: + is used to concatinate strings
+# s1 = "hello"
+# s2 = "world"
+# s3 = s1 + " " + s2
+# print(s3)
+
+# s = ""
+# arr = ['h', 'e', 'l', 'l', 'o', '!']
+# for i in range(len(arr)):
+#     s += arr[i]
+
+# print(s)    
+
+
+# multiplying a number by string
+# s = 'hi'
+# num = 5
+# s2 = s * num
+# print(s2)
+
+# sentence = "hello,this,is,computer,science"
+# words = sentence.split(',')
+# print(words)
+
+# Indexing
+# s = "Hello world"
+# print(s[0:7:2])
+
+# s = 'Saahil Ghulam'
+# fname = s[0:6]
+# lname = s[::-1]
+# print(fname)
+# print(lname)
+
+
+# s = "hello".upper()        # 'HELLO'
+# print(s)
+# s = "HELLO".lower()         # 'hello'
+# print(s)
+# s = "hello world".title()   # 'Hello World'
+# print(s)
+# s = "Hello World".swapcase()# 'hELLO wORLD'
+# print(s)
+# s = "hello".capitalize()    # 'Hello'
+# print(s)
+
+# s = '23'
+# flag = s.isdigit()
+# print(flag)
+
+#P
+#"
+#Programming
+#nuF si gnimmargrop
+#rgamn
+
+# if "Programming">"programming":
