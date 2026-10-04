@@ -47,17 +47,36 @@
 # top = pop(stack, top)
 # print(stack)
 
-global StackPointer
-global StackData
-StackPointer = 0
-StackData = [None for i in range(10)]
+# global StackPointer
+# global StackData
+# StackPointer = 0
+# StackData = [None for i in range(10)]
 
-def PrintStack():
-    global StackPointer, StackData
-    for i in range(StackPointer):
-        print(StackData[i])
+# def PrintStack():
+#     global StackPointer, StackData
+#     for i in range(StackPointer):
+#         print(StackData[i])
     
-    print("Stack Pointer: ", StackPointer)
+#     print("Stack Pointer: ", StackPointer)
 
-PrintStack()        
+# PrintStack()        
+   
+   
+# stack: size, array, top
+# push, pop, print stack
+
+# Tomorrows plan
+"""
+- functions, global, local
+- binary search
+- string handling
+- insertion sort
+
+new:
+- random number generation
+- stacks revision
+- 2d arrays, nested loops
+"""
+          
+        
     
