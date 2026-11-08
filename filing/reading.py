@@ -36,6 +36,7 @@ Filing Functions:
 # print(names)    
 # file.close()
 
+
 # Only use for line in file when you want to read one line at a time -> else use while loop
 
 
@@ -109,16 +110,17 @@ Split function revision
 #     print("Student age: ", students[i].GetAge())
        
     
-students = []
-file = open("reading3.txt", "r")
-line = file.readline().strip()
-while line != "":
-    arr = line.split(",")
-    s = Student(arr[0], int(arr[1]))
-    students.append(s)
-    line = file.readline().strip()
-file.close()
-for i in range(len(students)):
-    print("Student name: ", students[i].GetName())   
-    print("Student age: ", students[i].GetAge())
+# students = []
+# file = open("reading3.txt", "r")
+# line = file.readline().strip()
+# while line != "":
+#     arr = line.split(",")
+#     s = Student(arr[0], int(arr[1]))
+#     students.append(s)
+#     line = file.readline().strip()
+# file.close()
+# for i in range(len(students)):
+#     print("Student name: ", students[i].GetName())   
+#     print("Student age: ", students[i].GetAge())
        
+# file = open("ndkasjnf.txt", "r")       
