@@ -18,29 +18,9 @@ def outputNodes(LinkedList, startPointer):
         print(LinkedList[ptr].data)
         ptr = LinkedList[ptr].nextNode
         
-outputNodes(LinkedList, startPointer)        
+# outputNodes(LinkedList, startPointer)        
         
-        
-
-# def insertAtEnd(Linkedlist, startPointer, val):
-#     ptr = startPointer
-#     while Linkedlist[ptr].NextNode != -1:
-#         ptr = Linkedlist[ptr].NextNode
-    
-#     # now ptr stands at the last node
-#     # add the new node in free position or append it in the list
-#     new = Node(val, -1)
-#     Linkedlist.append(new)
-#     lastidx = len(Linkedlist) - 1
-#     Linkedlist[ptr].NextNode = lastidx
-    
-# print("Before")    
-# outputNodes(LinkedList, startPointer)
-# insertAtEnd(LinkedList, startPointer, 100)
-# print("After")
-# outputNodes(LinkedList, startPointer)
-    
-    
+# adds to the end of the linkedlist    
 def addNode(Linkedlist):
     global startPointer, emptyList
     if emptyList == -1:
@@ -59,37 +39,75 @@ def addNode(Linkedlist):
     Linkedlist[curr].NextNode = -1
     return True    
 
-print("Before")
+
+def AddToStart(val):
+    global LinkedList, startPointer, emptyList
+    
+    if emptyList == -1:
+        return False
+    
+    curr = emptyList
+    LinkedList[curr].data = val
+    emptyList = LinkedList[emptyList].nextNode
+    
+    LinkedList[curr].nextNode = startPointer
+    startPointer = curr
+    return True
+
+
+# print("Before")
+# outputNodes(LinkedList, startPointer)
+# res = addNode(LinkedList)
+# if res == True:
+#     print("Added")
+# else:
+#     print("Not added")    
+# print("After")
+# res = addNode(LinkedList)
+# if res == True:
+#     print("Added")
+# else:
+#     print("Not added")    
+# print("After")
+# res = addNode(LinkedList)
+# if res == True:
+#     print("Added")
+# else:
+#     print("Not added")    
+# print("After")
+# res = addNode(LinkedList)
+# if res == True:
+#     print("Added")
+# else:
+#     print("Not added")    
+# print("After")
+# res = addNode(LinkedList)
+# if res == True:
+#     print("Added")
+# else:
+#     print("Not added")    
+# print("After")
+# outputNodes(LinkedList, startPointer)      
+
+print("Before:")
 outputNodes(LinkedList, startPointer)
-res = addNode(LinkedList)
+res = AddToStart(200)
 if res == True:
     print("Added")
 else:
-    print("Not added")    
-print("After")
-res = addNode(LinkedList)
+    print("Not added")
+print("After:")
+res = AddToStart(300)
 if res == True:
     print("Added")
 else:
-    print("Not added")    
-print("After")
-res = addNode(LinkedList)
+    print("Not added")
+print("After:")
+res = AddToStart(500)
 if res == True:
     print("Added")
 else:
-    print("Not added")    
-print("After")
-res = addNode(LinkedList)
-if res == True:
-    print("Added")
-else:
-    print("Not added")    
-print("After")
-res = addNode(LinkedList)
-if res == True:
-    print("Added")
-else:
-    print("Not added")    
-print("After")
-outputNodes(LinkedList, startPointer)        
+    print("Not added")
+print("After:")
+outputNodes(LinkedList, startPointer)
         
